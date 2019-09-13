@@ -1,0 +1,70 @@
+= Silver Bars Market Place Test
+:toc:
+:sectnums:
+
+== Implementation Notes
+
+The Application is written in Java as micro service and uses the below framework/libraries:
+
+- Java 11
+- Spring boot
+- Junit5
+- Mockito
+- Lombok
+
+Design considerations:
+
+- Implemented as Rest api's for ease of use
+- spring-boot framework used to develop this service as it is very mature, stable, light weight, good documentation,
+provides swagger documentation with minimal configuration etc..
+- For simplicity, currency code and quantity unit's are ignored
+
+== Compile and test
+
+```
+./mvnw clean test
+```
+
+== Running the application
+
+```
+./mvnw spring-boot:run
+```
+
+This application will be available on port 8080.
+Api documentation is available at http://localhost:8080/swagger-ui.html#/order-controller
+
+== Api Usage
+
+Example curl requests:
+
+- Register an order
+
+```
+curl -d '{"userId": "user1", "quantity": 5, "price": 2.5, "orderType": "BUY"}' -H "Content-Type: application/json" -X POST http://localhost:8080/orders
+```
+
+- Cancel an order
+
+Order cancellation is based on orderId. The orderId can be found in the response to order registration.
+
+```
+curl -i -X DELETE http://localhost:8080/orders/a780d71c-d595-42d9-b409-26245c5fff95
+```
+
+- Buy Order Board Summary
+
+```
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8080/orders/summary/buy
+```
+
+- Sell Order Board Summary
+
+```
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8080/orders/summary/sell
+```
+
+
+
+
+
