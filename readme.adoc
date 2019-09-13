@@ -58,6 +58,8 @@ Order cancellation is based on orderId. The orderId can be found in the response
 curl -i -X DELETE http://localhost:8080/orders/a780d71c-d595-42d9-b409-26245c5fff95
 ```
 
+Returns 404, when order not found.
+
 - Buy Order Board Summary
 
 ```
@@ -69,8 +71,3 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET
 ```
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8080/orders/summary/sell
 ```
-
-
-
-
-
