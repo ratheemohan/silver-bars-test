@@ -5,6 +5,9 @@ import lombok.NonNull;
 
 import javax.validation.constraints.NotEmpty;
 
+/**
+ * Response for successful order creation
+ */
 @Data
 public class OrderResponse {
     @NonNull

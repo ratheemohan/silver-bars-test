@@ -6,6 +6,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Store's Orders in memory.
+ */
 @Slf4j
 public class InMemoryOrderRepository implements OrderRepository {
 

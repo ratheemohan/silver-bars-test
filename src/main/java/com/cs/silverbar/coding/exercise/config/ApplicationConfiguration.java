@@ -1,5 +1,6 @@
 package com.cs.silverbar.coding.exercise.config;
 
+import com.cs.silverbar.coding.exercise.SilverBarApplication;
 import com.cs.silverbar.coding.exercise.repository.InMemoryOrderRepository;
 import com.cs.silverbar.coding.exercise.repository.OrderRepository;
 import com.cs.silverbar.coding.exercise.service.DefaultOrderService;
@@ -11,6 +12,9 @@ import com.cs.silverbar.coding.exercise.util.UUIDGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Configures {@link Bean}'s required for {@link SilverBarApplication}
+ */
 @Configuration
 public class ApplicationConfiguration {
 

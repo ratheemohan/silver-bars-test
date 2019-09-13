@@ -17,6 +17,10 @@ import java.util.stream.Collectors;
 
 import static com.cs.silverbar.coding.exercise.domain.OrderType.SELL;
 
+/**
+ * Implements logic to merge orders of same {@link OrderType} with same price.
+ * The Sell order summary will be sorted on price from lowest to highest, where as Buy orders will be vice-versa
+ */
 @Value
 @Slf4j
 public final class OrderSummaryService {

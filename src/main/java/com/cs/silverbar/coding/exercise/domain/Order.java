@@ -7,6 +7,9 @@ import lombok.Value;
 import java.math.BigDecimal;
 import java.time.Instant;
 
+/**
+ * An Immutable class to represent Order
+ */
 @Value
 @Builder
 public class Order {

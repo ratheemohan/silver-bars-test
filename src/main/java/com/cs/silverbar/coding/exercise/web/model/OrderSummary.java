@@ -5,6 +5,9 @@ import lombok.NonNull;
 
 import java.math.BigDecimal;
 
+/**
+ * Order summary per merged order.
+ */
 @Data
 public class OrderSummary {
     @NonNull

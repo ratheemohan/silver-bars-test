@@ -13,6 +13,9 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+/**
+ * Service to implement business logic as part of order management
+ */
 @AllArgsConstructor
 @Slf4j
 public class DefaultOrderService implements OrderService {

@@ -15,8 +15,14 @@ The Application is written in Java as micro service and uses the below framework
 Design considerations:
 
 - Implemented as Rest api's for ease of use
-- spring-boot framework used to develop this service as it is very mature, stable, light weight, good documentation,
-provides swagger documentation with minimal configuration etc..
+- spring-boot framework is used to develop this service for the following reasons:
+    . mature
+    . stable
+    . light weight
+    . abstractions for various api's
+    . provides good documentation
+    . provides swagger documentation with minimal configuration etc..
+
 - For simplicity, currency code and quantity unit's are ignored
 
 == Compile and test

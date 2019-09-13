@@ -15,6 +15,9 @@ import static com.cs.silverbar.coding.exercise.domain.OrderType.SELL;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
+/**
+ * Provides endpoints to create, delete and LiveSummary of orders
+ */
 @RestController
 @RequestMapping("/orders")
 @Slf4j

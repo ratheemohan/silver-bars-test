@@ -8,6 +8,9 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import java.math.BigDecimal;
 
+/**
+ * Api model used as request object for order creation.
+ */
 @Data
 public class OrderRequest {
 

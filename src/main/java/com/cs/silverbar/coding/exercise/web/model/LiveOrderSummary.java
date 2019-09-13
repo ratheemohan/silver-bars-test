@@ -5,6 +5,9 @@ import lombok.NonNull;
 
 import java.util.List;
 
+/**
+ * Api model to provide live order summary
+ */
 @Data
 public class LiveOrderSummary {
 

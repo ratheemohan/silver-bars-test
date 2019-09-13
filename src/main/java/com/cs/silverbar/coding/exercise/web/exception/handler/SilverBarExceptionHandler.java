@@ -13,6 +13,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import static org.springframework.http.HttpHeaders.EMPTY;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
+/**
+ * Handles exception and responds with appropriate http status code
+ */
 @ControllerAdvice
 @Slf4j
 public class SilverBarExceptionHandler extends ResponseEntityExceptionHandler {
